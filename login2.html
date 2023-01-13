@@ -3,59 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>로그인 페이지</title>
-<!--    웹페이지 창 이름-->
+    <!--    웹페이지 창 이름-->
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 
-    <style>
-        /*"." + class이름으로 작업할 부분에 대해 꾸미기*/
-        .mytitle{
-            /*<div></div> 에 포함된 내용에 대해 꾸미기*/
-            background-color: aqua;
-            /*background-color는 배경 색상만 변경해준다.*/
-
-
-            /*아래 3가지는 항상 묶어서 사용하는 것을 추천한다.*/
-            background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
-            /*배경에 이미지를 넣기*/
-            background-size: cover;
-            /*배경사이즈만큼 사이즈 자동 조절하기*/
-            background-position: center;
-            /*배경사이즈 중앙에 위치 조정하기*/
-
-
-            border-radius: 10px;
-            /*박스 사각을 둥글게 만들기*/
-
-
-            width: 300px;
-            height: 200px;
-
-            color: white;
-            /*color는 글씨 색상만 변경해준다.*/
-
-            text-align: center;
-            /*글씨를 가운데 오게 정열한다*/
-
-            padding-top: 40px;
-            /*위쪽 안쪽 여백 공간을 확보한다.즉 위쪽 박스라인과 "로그인페이지" 글자 사이의 공간을 만드는 것이다.*/
-
-        }
-
-        .mybtn{
-            margin:20px;
-            /*바깥여백 상하좌우 모두 20px이다*/
-            /*margin:20px 20px 20px 20px;*/
-            /*시계방향으로 상  우  하  좌 모두 20px 바깥여백으로 설정하는 것이다.margin:20px; 과는 똑같은 뜻이다. */
-
-            padding: 20px 20px 20px 50px;
-            /*안쪽 왼쪽여백만 더 크다. */
-            /*즉 "로그인 하기" 글자와 버튼 박스 라인 사이 왼쪽편 공간이 더 많다로 이해하면 된다*/
-        }
-
-        .wrap{
-            background-color: c;
-
-        }
-    </style>
+    <!-- style.css 파일을 같은 폴더에 만들고, head 태그에서 불러오기 -->
+    <link rel="stylesheet" type="text/css" href = "mystyle.css">
 </head>
 <body>
     <div class="wrap">
@@ -64,8 +16,8 @@
             <h5>아이디, 비밀번호를 입력해주세요</h5>
         </div>
 
-        <P>ID:<input type="text"/></p>
-        <p>PW:<input type="text"/></p>
+        <P>ID: <input type="text"/></p>
+        <p>PW: <input type="text"/></p>
         <!--    input으로 입력할 수 있는 박스를 추가-->
         <button class="mybtn"> 로그인 하기</button>
 
